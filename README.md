@@ -17,4 +17,4 @@ After the Spark job completes successfully, the DAG terminates the EMR cluster t
 ### Refresh Snowflake External Table
 Once the transformed data is stored back in S3, the pipeline triggers a Snowflake external table refresh using the SnowflakeOperator in Airflow. External tables in Snowflake allow direct access to data stored in S3 without physically importing it, offering a highly efficient way to manage large datasets. By refreshing the table, the latest version of the transformed data becomes available in Snowflake, ensuring that analysts and downstream processes always have access to the most up-to-date information.
 
-This is the Airflow graph for the above tasks ![Airflow DAG Graph](Airflow Graph.png)
+This is the Airflow graph for the above tasks ![Airflow DAG Graph](AirflowGraph.png)
