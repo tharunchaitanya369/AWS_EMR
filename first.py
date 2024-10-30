@@ -8,7 +8,7 @@ from time import sleep
 from airflow.contrib.operators.snowflake_operator import SnowflakeOperator
 from airflow.contrib.hooks.snowflake_hook import SnowflakeHook
 
-client=boto3.client("emr",region_name="us-east-1",aws_access_key_id="AKIASFZU6L3BRQSZBYG4",aws_secret_access_key="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")
+client=boto3.client("emr",region_name="us-east-1",aws_access_key_id="**********",aws_secret_access_key="************")
 
 default_args={"retries":2,"retry_delay":timedelta(minutes=2)}
 with DAG (
